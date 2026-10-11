@@ -1,0 +1,166 @@
+User Story 1 : Create and Delete Timer Widgets
+    As a user, I want to create and delete timer widgets so that I can manage the timers I need on my dashboard.
+
+Acceptance Criteria:
+   1.1. Given the dashboard is open, when the user clicks "Add Timer", then a new timer widget is displayed.
+   1.2. Given a timer widget exists, when the user clicks its delete button, then the timer widget is removed.
+    
+Test Scenarios:
+1.1. Create a Time Widget
+    1. Open the application.
+    2. Click the "Add Timer" button.
+    3. Verify that a new timer widget appears.
+
+Expected Result: A new timer widget is displayed.
+    
+1.2. Delete a timer widget
+    1. Create a timer widget.
+    2. Click the delete button on the timer.
+    3. Verify that the timer widget disappears.
+
+Expected Result: The timer widget is removed from the dashboard.
+
+===========================================================================================================
+
+User Story 2: Create and Delete Note Widgets
+    As a user, I want to create and delete note widgets so that I can manage notes and reminders.
+
+Acceptance Criteria:
+    2.1 Given the dashboard is open, when the user clicks "Add Note", then a new note widget is displayed.
+    2.2 Given a note widget exists, when the user clicks its delete button, then the note widget is removed.
+
+Test Scenarios
+2.1. Create a note widget
+    1. Open the application.
+    2. Click the "Add Note" button.
+    3. Verify that a new note widget appears.
+
+Expected Result: A new note widget is displayed.
+
+2.2. Delete a note widget
+    1. Create a note widget.
+    2. Click the delete button on the note.
+    3. Verify that the note widget disappears.
+
+Expected Result: The note widget is removed from the dashboard.
+
+===========================================================================================================
+
+User Story 3: Swap Two Widgets
+    As a user, I want to rearrange widgets so that I can organise my dashboard as I prefer.
+
+Acceptance Criteria:
+    3.1. Given at least two widgets exist, when the user drags one widget to another position, then the widget order is updated.
+    3.2. Given widgets contain data, when widgets are moved, then their content remains unchanged.
+
+Test Scenarios
+3.1: Swap positions of two widgets
+    1. Create a timer widget.
+    2. Create a note widget.
+    3. Note their original positions.
+    4. Drag the note widget above the timer widget.
+    5. Verify the order has changed.
+
+Expected Result: The widgets appear in the new order.
+
+3.2: Verify content remains after swapping
+    1. Add text to a note widget.
+    2. Reorder the widgets.
+    3. Verify the note still contains the entered text.
+
+Expected Result: Widget data remains unchanged.
+
+===========================================================================================================
+
+User Story 4: Start, Pause, and Reset a Timer
+    As a user, I want to start, pause, and reset a timer so that I can control the countdown.
+
+Acceptance Criteria:
+    4.1 Given a timer exists, when the user clicks Start, then the timer begins counting down.
+    4.2 Given a timer is running, when the user clicks Pause, then the countdown stops.
+    4.3 Given a timer has been started or paused, when the user clicks Reset, then the timer returns to its original value.
+
+Test Scenarios
+4.1: Start a timer
+    1. Create a timer.
+    2. Click Start.
+    3. Wait a few seconds.
+    4. Observe the timer value.
+
+Expected Result: The timer value decreases over time.
+
+4.2: Pause a timer
+    1. Click on Add timer.
+    2. Start the timer.
+    3. Wait a few seconds.
+    4. Click Pause.
+    5. Observe the time value for several seconds.
+
+Expected Result: The timer value does not change while paused.
+
+4.3: Reset a timer
+   1. Start the timer.
+   2. Wait a few seconds.
+   3. Click Reset.
+
+Expected Result: The timer returns to its original configured value.
+
+===========================================================================================================
+
+User Story 5: Change Note Text
+    As a user, I want to edit note text so that I can keep my notes updated.
+
+Acceptance Criteria:
+    5.1 Given a note widget exists, when the user enters text, then the text is displayed.
+    5.2 Given a note contains text, when the user edits it, then the updated text is displayed.
+
+Test Scenarios
+5.1: Add text to a note
+    1. Create a note widget.
+    2. Type "Swap order test".
+    3. Verify that the text appears in the note.
+
+Expected Result: The entered text is displayed.
+
+5.2: Edit note text
+    1. Create a note widget.
+    2. Enter text.
+    3. Modify the existing text.
+    4. Verify the updated text is displayed.
+
+Expected Result: The edited text replaces the previous text.
+
+5.3: Save an empty note (app shouldn't accept - Negative Scenario, but the app is accepting empty note)
+    1. Create a note widget.
+    2. Leave the note text empty.
+    3. Click outside the note or save the changes.
+
+Expected Result
+    1. The application handles the empty note gracefully.
+    2. No errors occur.
+    3. The user can continue using the application normally.
+
+===========================================================================================================
+
+User Story 6: Change Theme Colour
+    As a user, I want to change the theme colour so that I can personalise the application.
+
+Acceptance Criteria:
+    6.1 Given the application is open, when the user selects a different theme colour, then the appearance changes.
+    6.2 Given a theme colour is selected, then the selected colour is applied consistently throughout the application.
+
+Test Scenarios
+6.1: Change application theme
+    1. Open the application.
+    2. Select a different theme colour.
+    3. Observe the application appearance.
+
+Expected Result: The application's colour theme changes.
+
+6.2: Verify theme is applied consistently
+    1. Change the theme colour.
+    2. Inspect different widgets and interface elements.
+
+Expected Result: All applicable UI elements use the selected theme colour consistently.
+
+===========================================================================================================

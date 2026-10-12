@@ -55,10 +55,10 @@ Acceptance Criteria:
 
 Test Scenarios
 3.1: Swap positions of two widgets
-    1. Create a timer widget.
-    2. Create a note widget.
+    1. Click on timer widget.
+    2. Click a note widget.
     3. Note their original positions.
-    4. Drag the note widget above the timer widget.
+    4. click on Up Arrow icon in the note widget.
     5. Verify the order has changed.
 
 Expected Result: The widgets appear in the new order.
@@ -82,7 +82,7 @@ Acceptance Criteria:
 
 Test Scenarios
 4.1: Start a timer
-    1. Create a timer.
+    1. Click on Add Timer
     2. Click Start.
     3. Wait a few seconds.
     4. Observe the timer value.
@@ -118,15 +118,17 @@ Test Scenarios
 5.1: Add text to a note
     1. Create a note widget.
     2. Type "Swap order test".
-    3. Verify that the text appears in the note.
+    3. Click outside the note or save the changes.
+    4. Verify that the text appears in the note.
 
 Expected Result: The entered text is displayed.
 
 5.2: Edit note text
     1. Create a note widget.
     2. Enter text.
-    3. Modify the existing text.
-    4. Verify the updated text is displayed.
+    3. Modify the existing text.'
+    4. Click outside the note or save the changes.
+    5. Verify the updated text is displayed.
 
 Expected Result: The edited text replaces the previous text.
 
